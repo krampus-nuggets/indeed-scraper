@@ -27,4 +27,4 @@ pageQuery = urllib.request.urlopen(req)
 parsedHTML = BeautifulSoup(pageQuery, 'html.parser')
 
 # Print parsed data
-print(soup)
+print(parsedHTML)
