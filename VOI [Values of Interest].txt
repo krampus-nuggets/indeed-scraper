@@ -1,0 +1,5 @@
+﻿div - class{title} | Position Available
+span - class{location} | Job Location
+span - class{company} | Company
+span - class{salary} | Salary
+div - class{summary} | Job Summary
