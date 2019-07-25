@@ -1,6 +1,19 @@
-﻿div - class{title} | Position Available
+﻿span - class{company} | Company Name
+
 span - class{location} | Job Location
-span - class{company} | Company
 span - class{salary} | Salary
 span - class{date} | Date Created
-div - class{summary} | Job Summary
+div - class{summary} | Summary of Description
+
+Available Jobs
+--------------
+div - class{title}
+data-tn-element - class{jobTitle}
+
+Company Name
+------------
+div - class{sjcl}
+span - class{company}
+
+
+
