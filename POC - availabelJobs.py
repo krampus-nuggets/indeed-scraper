@@ -5,7 +5,8 @@ import urllib.request
 import time
 
 # Specify the Scrape URL
-pageURL =  'https://www.indeed.co.za/jobs?q=wordpress&l=Cape+Town%2C+Western+Cape'
+# Test URL - https://www.indeed.co.za/jobs?q=wordpress&l=Cape+Town%2C+Western+Cape
+pageURL =  '<your-url>'
 
 # Assign User-Agent to Scrape Request
 req = urllib.request.Request(
@@ -28,6 +29,6 @@ def availableJobs(parsedHTML, jobs):
     for div in parsedHTML.find_all(name='div', attrs={'class':'title'}):
         for a in div.find_all(name='a', attrs={'data-tn-element':'jobTitle'}):
             jobs.append(a.getText().strip())
-            print(jobs)
+    print(jobs)
 
 availableJobs(parsedHTML, jobs)
