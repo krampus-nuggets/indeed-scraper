@@ -10,7 +10,7 @@ import urllib.request
 import time
 
 # Specify the Scrape URL
-# Test URL - https://www.indeed.co.za/jobs?q=wordpress&l=Cape+Town%2C+Western+Cape
+# Test URL - https://www.indeed.co.za/jobs?q=wordpress&l=Cape+Town,+Western+Cape&start=10
 pageURL =  '<your-url>'
 
 # Assign User-Agent to Scrape Request
