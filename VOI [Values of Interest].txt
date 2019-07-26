@@ -1,5 +1,4 @@
-﻿span - class{salary} | Salary
-span - class{date} | Date Created
+﻿span - class{date} | Date Created
 div - class{summary} | Summary of Description
 
 Available Jobs
@@ -22,7 +21,7 @@ Job Salary
 div - class{salarySnippet}
 span - class{salary}
 
-
-
-
-
+Date Created
+------------
+div - class{result-link-bar}
+span - class{date}
