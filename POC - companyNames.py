@@ -26,5 +26,12 @@ pageQuery = urllib.request.urlopen(req)
 # Parse the HTML Code using BeautifulSoup and assign parsed data to variable 'parsedHTML'
 parsedHTML = BeautifulSoup(pageQuery, 'html.parser')
 
-# Print parsed data
-print(parsedHTML)
+names = []
+
+def companyNames(parsedHTML, names):
+    for div in parsedHTML.find_all(name='div', attrs={'class':'sjcl'}):
+        for span in div.find_all(name='span', attrs={'class':'company'}):
+            names.append(span.getText().strip())
+    print(names)
+
+companyNames(parsedHTML, names)
