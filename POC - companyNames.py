@@ -1,14 +1,9 @@
-# Indeed - Scraper v0.1
-# Project scoped towards HTML Scraping not JavaScript
-# Please check out Headless Browser libraries for Python such as Selenium for JavaScript Heavy Scraping
-# This scraper WILL NOT work on JavaScript Heavy Websites
-
 # import libraries
 from bs4 import BeautifulSoup
 import urllib.request
-import csv
 
 # Specify the Scrape URL
+# Test URL - https://www.indeed.co.za/jobs?q=wordpress&l=Cape+Town,+Western+Cape&start=10
 pageURL =  '<your-url>'
 
 # Assign User-Agent to Scrape Request
@@ -26,12 +21,15 @@ pageQuery = urllib.request.urlopen(req)
 # Parse the HTML Code using BeautifulSoup and assign parsed data to variable 'parsedHTML'
 parsedHTML = BeautifulSoup(pageQuery, 'html.parser')
 
+# Create list
 names = []
 
+# Function - iterate through div and span elements for value and output to list
 def companyNames(parsedHTML, names):
     for div in parsedHTML.find_all(name='div', attrs={'class':'sjcl'}):
         for span in div.find_all(name='span', attrs={'class':'company'}):
             names.append(span.getText().strip())
     print(names)
 
+# Execute function => companyNames
 companyNames(parsedHTML, names)

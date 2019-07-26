@@ -22,14 +22,14 @@ pageQuery = urllib.request.urlopen(req)
 parsedHTML = BeautifulSoup(pageQuery, 'html.parser')
 
 # Create list
-locations = []
+salaries = []
 
 # Function - iterate through div and span elements for value and output to list
-def jobLocation(parsedHTML, locations):
-    for div in parsedHTML.find_all(name='div', attrs={'class':'sjcl'}):
-        for span in div.find_all(name='span', attrs={'class':'location'}):
-            locations.append(span.getText().strip())
-    print(locations)
+def jobSalary(parsedHTML, salaries):
+    for div in parsedHTML.find_all(name='div', attrs={'class':'salarySnippet'}):
+        for span in div.find_all(name='span', attrs={'class':'salary'}):
+            salaries.append(span.getText().strip())
+    print(salaries)
 
-# Execute function => jobLocation
-jobLocation(parsedHTML, locations)
+# Execute function => jobSalary
+jobSalary(parsedHTML, salaries)

@@ -1,5 +1,4 @@
-﻿span - class{location} | Job Location
-span - class{salary} | Salary
+﻿span - class{salary} | Salary
 span - class{date} | Date Created
 div - class{summary} | Summary of Description
 
@@ -17,6 +16,13 @@ Job Location
 ------------
 div - class{sjcl}
 span - class{location}
+
+Job Salary
+----------
+div - class{salarySnippet}
+span - class{salary}
+
+
 
 
 
