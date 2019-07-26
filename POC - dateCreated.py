@@ -22,14 +22,14 @@ pageQuery = urllib.request.urlopen(req)
 parsedHTML = BeautifulSoup(pageQuery, 'html.parser')
 
 # Create list
-locations = []
+dates = []
 
 # Function - iterate through div and span elements for value and output to list
-def jobLocation(parsedHTML, locations):
-    for div in parsedHTML.find_all(name='div', attrs={'class':'sjcl'}):
-        for span in div.find_all(name='span', attrs={'class':'location'}):
-            locations.append(span.getText().strip())
-    print(locations)
+def dateCreated(parsedHTML, dates):
+    for div in parsedHTML.find_all(name='div', attrs={'class':'result-link-bar'}):
+        for span in div.find_all(name='span', attrs={'class':'date'}):
+            dates.append(span.getText().strip())
+    print(dates)
 
-# Execute function => jobLocation
-jobLocation(parsedHTML, locations)
+# Execute function => dateCreated
+dateCreated(parsedHTML, dates)
