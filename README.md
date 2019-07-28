@@ -37,4 +37,5 @@ The **Indeed Scraper** is exactly as the name states, a Python Based Web Scraper
  - HTML Sites only at moment, JavaScript Heavy Sites addition👨🏽‍🏭
  - Django or Flask Front-End👨🏽‍🔬
  - Multiple sites, not just indeed😑
- [Yes, I know the above is very broad. So.... 🤾🏽‍♂️⛰️]
+
+[Yes, I know the above is very broad. So.... 🤾🏽‍♂️⛰️]
