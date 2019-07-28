@@ -14,8 +14,6 @@ The **Indeed Scraper** is exactly as the name states, a Python Based Web Scraper
  1. Install Python v3+ - Get it [here](https://www.python.org/downloads/)
  2. Install BeautifulSoup4 Library [In Terminal] - `pip3 install bs4`
  3. Check that bs4 was installed correctly [In Terminal] - `python` | `import bs4`- If the commands execute without error, you're good to go and if not [Google](https://www.google.com/) the error🙃
- 4. Open one of the POC files in your code editor and change `<your-url>` to the provided Test URL *(commented out)*
- 5. [In Terminal - In POC Directory] `python 'POC filename'`
 
 ## Test POC Function
 1. Open one of the POC files in your code editor and change `<your-url>` to the provided Test URL *(commented out)*
