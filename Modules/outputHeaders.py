@@ -22,3 +22,8 @@ Job Location|
 hJS = """----------
 Job Salary|
 ----------"""
+
+# Header - descriptionSummary
+hDS = """-------------------
+Description Summary|
+-------------------"""

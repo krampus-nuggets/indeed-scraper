@@ -15,6 +15,7 @@ from companyNames import companyNames
 from dateCreated import dateCreated
 from jobLocation import jobLocation
 from jobSalary import jobSalary
+from descriptionSummary import descriptionSummary
 from outputHeaders import *
 
 # Specify the Scrape URL
@@ -47,3 +48,5 @@ print(hJL)
 jobLocation(parsedHTML)
 print(hJS)
 jobSalary(parsedHTML)
+print(hDS)
+descriptionSummary(parsedHTML)
