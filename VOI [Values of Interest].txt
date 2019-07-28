@@ -1,7 +1,4 @@
-﻿span - class{date} | Date Created
-div - class{summary} | Summary of Description
-
-Available Jobs
+﻿Available Jobs
 --------------
 div - class{title}
 data-tn-element - class{jobTitle}
@@ -25,3 +22,8 @@ Date Created
 ------------
 div - class{result-link-bar}
 span - class{date}
+
+Description Summary
+-------------------
+div - class{result}
+div - class{summary}
